@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  background-color: #ffeead;
+  margin: 10px;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* .container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #06d6a0;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #118ab2;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #ef476f;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffd166;
+} */
+
+/* .container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 90px);
+  grid-template-rows: repeat(2, 90px);
+  grid-gap: 5px; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
+   */
+  /* grid-template-rows: 40px auto 30px ; */
+  /* grid-template-areas: 
+   "m m m h h h h h h h h h "
+   "m m m c c c c c c c c c"
+   ". f f f f f f f f f f ."
+  ; */
+ 
+  /* justify-content: space-evenly; */
+  /* align-content: space-between; */
+  /* justify-items: center;
+  align-items: center; */
+/* } */
+/* .five{
+  justify-self: center;
+  align-self: center;
+} */
+
+  /* .header{
+
+      grid-area: h;
+  }
+  .menu{
+      grid-area: m;
+  }
+  .content{
+      grid-area: c;
+  }
+  .footer{
+      grid-area: f;
+      
+  } */
+
+
+
+  /* photo gallery starts */
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+}
+.container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: space-around;
+  border-radius: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.horizontal{
+  grid-column: auto / span 2;
+}
+.vertical{
+  grid-row: span 2;
+}
+.big{
+  grid-column: span 2;
+  grid-row: span 2;
+}
